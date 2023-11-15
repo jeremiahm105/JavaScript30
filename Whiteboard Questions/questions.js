@@ -12,20 +12,20 @@ console.log(reverseString("hello"));
 
 //TODO: Write a program that prints the numbers from 1-100. For multiples of three print Fizz, for multiples of 5 print Buzz for multiples of 3 and 5 print FizzBuzz.
 
-// for (let i = 1; i <= 50; i++) {
-//     if (i % 3 === 0 && i % 5 === 0) {
-//         console.log("FizzBuzz");
-//     } else if (i % 3 === 0) {
-//         console.log("Fizz");
-//     } else if (i % 5 === 0) {
-//         console.log("Buzz");
-//     } else {
-//         console.log(i);
-//     }
-// }
+for (let i = 1; i <= 15; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
 
 // //TODO: Write the FizzBuzz as a switch statement
-for (let j = 1; j <= 60; j++) {
+for (let j = 1; j <= 15; j++) {
     switch (true) {
         case j % 3 === 0 && j % 5 === 0:
             console.log("FizzBuzz");
@@ -94,4 +94,66 @@ function removeDuplicates(arr) {
     return result;
 }
 console.log(removeDuplicates(originalArray));
+
+//call back functions
+console.log(`CallBack Function Example`);
+console.log(`--------------`);
+
+// function greet(name) {
+//     console.log(`Hi ${name}`);
+// }
+// greet("Jay");
+//
+//
+// function callMe() {
+//     console.log(`Im a callback function`);
+// }
+// callMe();
+//
+// greet("Ben", callMe());
+
+// function
+function greet(name, callback) {
+    console.log('Hi' + ' ' + name);
+    callback();
+}
+
+// callback function
+function callMe() {
+    console.log('I am callback function');
+}
+
+// passing function as an argument
+greet('Peter', callMe);
+
+// Looping Array with For and forEach
+// using array literal method
+const cars = ["Saab", "Volvo", "BMW", "Chevy", "Mercedes"];
+console.log(cars[0]);
+console.log(cars[3]);
+let car = cars[2];
+
+cars[0] = "Dodge";
+console.log(cars);
+
+cars.push("sunny")
+console.log(cars);
+
+// objects and arrays
+const person = {firstName:"John", lastName:"Doe", age:46, DOB: " Feb 7"};
+console.log(person.firstName);
+console.log(cars.length);
+console.log(cars.sort());
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+
+}
+
+console.log(`for of`);
+for (let car of cars) {
+    console.log(car);
+}
 
