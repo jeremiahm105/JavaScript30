@@ -18,7 +18,7 @@ html {
     border-radius: 2px;
 }
 
-/*clearfix*/
+
 .photobooth:after {
     content: '';
     display: block;
@@ -36,10 +36,6 @@ html {
     right: 20px;
     width:200px;
 }
-
-/*
-  Strip!
-*/
 
 .strip {
     padding: 2rem;
