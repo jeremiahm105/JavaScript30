@@ -1,14 +1,24 @@
 "use strict"
 
 //TODO:Reverse a String example hello
-function reverseString(str) {
-    let strArray = str.split('');
-    // let reversedArray = strArray.reverse();
-    // let reversedString = reversedArray.join('');
-    // return reversedString;
-    return strArray;
+// function reverseString(str) {
+//     let strArray = str.split('');
+//     // let reversedArray = strArray.reverse();
+//     // let reversedString = reversedArray.join('');
+//     // return reversedString;
+//     return strArray;
+// }
+// console.log(reverseString("hello"));
+
+function reverseString (str) {
+    let strArray = str.split(" ")
+    let reversedArray = strArray.reverse()
+    let reversedString = reversedArray.join(" ")
+    return reversedString;
 }
+reverseString("hello")
 console.log(reverseString("hello"));
+console.log(reversedArray("hello"));
 
 //TODO: Write a program that prints the numbers from 1-100. For multiples of three print Fizz, for multiples of 5 print Buzz for multiples of 3 and 5 print FizzBuzz.
 
@@ -24,22 +34,23 @@ for (let i = 1; i <= 15; i++) {
     }
 }
 
+
 // //TODO: Write the FizzBuzz as a switch statement
-for (let j = 1; j <= 15; j++) {
-    switch (true) {
-        case j % 3 === 0 && j % 5 === 0:
-            console.log("FizzBuzz");
-            break;
-        case j % 3 === 0:
-            console.log("Fizz");
-            break;
-        case j % 5 === 0:
-            console.log("Buzz");
-            break;
-        default:
-            console.log(j);
-    }
-}
+// for (let j = 1; j <= 15; j++) {
+//     switch (true) {
+//         case j % 3 === 0 && j % 5 === 0:
+//             console.log("FizzBuzz");
+//             break;
+//         case j % 3 === 0:
+//             console.log("Fizz");
+//             break;
+//         case j % 5 === 0:
+//             console.log("Buzz");
+//             break;
+//         default:
+//             console.log(j);
+//     }
+// }
 
 //TODO: Palindrome Check: Write a function to determine if a given string is a palindrome -- Example radar
 
@@ -49,7 +60,7 @@ function isPalindrome(str) {
     return str === reversed;
 }
 
-console.log(isPalindrome("radar"));
+// console.log(isPalindrome("radar"));
 
 //Make a string case-insensitive split into an array, reverse the array and then join back into a string will print true or false based off the word
 
@@ -74,7 +85,7 @@ function findMissingNumber(arr, N) {
 const inputArray = [1, 2, 3, 5, 6, 7, 8, 9, 10];
 const N = 10; // Assuming the array contains numbers from 1 to N
 const missingNumber = findMissingNumber(inputArray, N);
-console.log("The missing number is:", missingNumber); //  4
+// console.log("The missing number is:", missingNumber); //  4
 
 //TODO:•	Remove Duplicates from Array: write a function that removes duplicate elements from an array preserving the original order of elements: working with array loops and data structures
 const originalArray = [1, 2, 2, 3, 4, 4, 5];
@@ -93,7 +104,7 @@ function removeDuplicates(arr) {
 
     return result;
 }
-console.log(removeDuplicates(originalArray));
+// console.log(removeDuplicates(originalArray));
 
 //call back functions
 console.log(`CallBack Function Example`);
@@ -120,7 +131,7 @@ function greet(name, callback) {
 
 // callback function
 function callMe() {
-    console.log('I am callback function');
+    // console.log('I am callback function');
 }
 
 // passing function as an argument
@@ -129,31 +140,31 @@ greet('Peter', callMe);
 // Looping Array with For and forEach
 // using array literal method
 const cars = ["Saab", "Volvo", "BMW", "Chevy", "Mercedes"];
-console.log(cars[0]);
-console.log(cars[3]);
+// console.log(cars[0]);
+// console.log(cars[3]);
 let car = cars[2];
 
 cars[0] = "Dodge";
-console.log(cars);
+// console.log(cars);
 
 cars.push("sunny")
-console.log(cars);
+// console.log(cars);
 
 // objects and arrays
 const person = {firstName:"John", lastName:"Doe", age:46, DOB: " Feb 7"};
-console.log(person.firstName);
-console.log(cars.length);
-console.log(cars.sort());
+// console.log(person.firstName);
+// console.log(cars.length);
+// console.log(cars.sort());
 
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]);
+    // console.log(fruits[i]);
 
 }
 
 console.log(`for of`);
 for (let car of cars) {
-    console.log(car);
+    // console.log(car);
 }
 
