@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 10px;
-    background: #ffc600;
+    background: rgba(255, 198, 0, 0.92);
 }
 
 *, *:before, *:after {
@@ -65,4 +65,12 @@ h1 {
 
 .hole.up .mole {
     top: 0;
+}
+button {
+    font-size: 2rem;
+    border: 3px solid black;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    z-index: 8
 }
